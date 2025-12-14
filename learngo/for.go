@@ -11,5 +11,7 @@ func main(){
 		fmt.Println(i)
 		i = i + 1
 	}
+
+	
 }
 //note variation cos you forget, arith before print changes output
