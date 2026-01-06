@@ -6,15 +6,15 @@ func sum(nums ...int) int {
 	total := 0
 	for _, num := range nums {
 		total += num
-	}	
+	}
 	return total
 }
-func main(){
-	sum(1,3,5)
-	sum(1,2,3)
 
-	nums := []int{1,2,3,4,5}
+func main() {
+	fmt.Println(sum(1, 3, 5))
+	fmt.Println(sum(1, 2, 3))
 
-	sum(nums...)
+	nums := []int{1, 2, 3, 4, 5}
 
+	fmt.Println(sum(nums...))
 }
